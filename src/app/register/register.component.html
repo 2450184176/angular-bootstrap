@@ -1,0 +1,69 @@
+<div class="container">
+
+	<div class="row">
+		<div class="col-md-10">
+			<div class="page-header login-header">
+				<a class="btn btn-default back-button" href="/login">
+					<span class="glyphicon glyphicon-arrow-left"></span>
+				</a>
+				<label class="registerTitle">用户注册</label>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-10">
+		<form novalidate="" class="ng-pristine ng-invalid ng-touched">
+			
+			<div class="form-group">
+				<label for="username">用户名</label>
+				<input 
+					class="form-control ng-untouched ng-pristine ng-invalid" 
+					id="username" 
+					name="username" 
+					[(ngModel)]="addUser.username" 										
+					required
+					type="text">
+			</div>
+			<div class="alert alert-danger" hidden="">账号不能为空</div>
+
+			<div class="form-group">
+				<label for="password">密码</label>
+				<input 
+					class="form-control ng-untouched ng-pristine ng-valid" 
+					id="password" 
+					minlength="3" 
+					name="password" 
+					[(ngModel)]="addUser.password"					
+					type="password">
+			</div>
+			
+			<div class="form-group">
+				<label for="cpassword">确认密码</label>
+				<input 
+					class="form-control ng-untouched ng-pristine ng-valid" 
+					name="password" 
+					[(ngModel)]="addUser.password"					
+					type="password">
+			</div>
+			
+			<div class="form-group" class="form-inline">				
+				<label for="category">用户类型</label>
+				<select 
+					id="category" 
+					name="category" 
+					[(ngModel)]="addUser.category"
+					class="ng-pristine ng-valid ng-touched" 
+					class="form-control">
+					<option value="stu">学生</option>
+					<option value="admin">管理员</option>
+				</select>
+			</div>
+			
+			<div class="">
+				<a class="btn btn-info register" type="submit" (click)="onAdd()">确定</a>
+			</div>
+			
+		</form>
+	</div>
+
+</div>

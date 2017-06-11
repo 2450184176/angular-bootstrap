@@ -1,0 +1,25 @@
+.form {
+	width: 720px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.form-inline {
+	margin: 20px;
+}
+
+.oparat {
+	margin: 10px;
+}
+
+.registerTitle {
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.search {
+	height: 72px;
+	line-height: 72px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<base href="/" />
+		<meta charset="utf-8" />
+		<title>图书管理系统</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<!-- 1. Load libraries -->
+		<!-- IE required polyfill -->
+		<script src="node_modules/core-js/client/shim.min.js"></script>
+		<script src="node_modules/zone.js/dist/zone.js"></script>
+		<script src="node_modules/rxjs/bundles/Rx.js"></script>
+		<script src="node_modules/@angular/core/bundles/core.umd.js"></script>
+		<script src="node_modules/@angular/common/bundles/common.umd.js"></script>
+		<script src="node_modules/@angular/router/bundles/router.umd.min.js"></script>
+		<script src="node_modules/@angular/compiler/bundles/compiler.umd.js"></script>
+		<script src="node_modules/@angular/platform-browser/bundles/platform-browser.umd.js"></script>
+		<script src="node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js"></script>
+
+		<!--导入FormsModule 库-->
+		<script src="node_modules/@angular/forms/bundles/forms.umd.min.js"></script>
+		<script src="node_modules/@angular/http/bundles/http.umd.min.js"></script>
+		<!-- 2. Load our 'modules' -->
+
+		<!-- Class -->
+		<script src="app/login/Users.js"></script>
+		<script src="app/dashboard/bookManagement/Book.js"></script>
+
+		<!-- Test Data -->
+		<!--<script src="test-data.js"></script>-->
+
+		<!-- Service -->
+		<script src="node_modules/angular-in-memory-web-api/bundles/in-memory-web-api.umd.js"></script>
+		<script src="in-memory-data.service.js"></script>
+		
+		<script src="app/login/users.service.js"></script>
+		<script src="app/dashboard/bookManagement/book.service.js"></script>
+		
+		
+		<!-- Component -->
+		<script src="app/app.component.js"></script>
+		<script src="app/register/register.component.js"></script>
+		<script src="app/pagenotfound.component.js"></script>
+		<script src="app/login/login.component.js"></script>
+		<script src="app/dashboard/dashboard.component.js"></script>
+		<script src="app/dashboard/bookManagement/bookmanagement.component.js"></script>
+		<script src="app/dashboard/details/details.component.js"></script>
+		<script src="app/dashboard/admin/admin.component.js"></script>
+		<script src="app/dashboard/stu/stu.component.js"></script>
+		<!--<script src="app/dashboard/book-search/book.search.component.js"></script>-->
+		
+
+		<!-- Guard -->
+		<script src="app/auth-guard.js"></script>		
+
+		<!-- Router -->
+		<script src="app/app-router.module.js"></script>
+		<script src="app/dashboard/dashboard-router.module.js"></script>
+
+		<!-- Module -->	
+		<script src="app/dashboard/dashboard.module.js"></script>		
+		<script src="app/app.module.js"></script>
+		
+		
+		<script src='main.js'></script>
+
+	</head>
+
+	<body>
+		
+		<booksys-app>Loading...</booksys-app>		
+		
+		<script src="js/jquery.min.js"></script>	
+		<script src="js/bootstrap.min.js"></script>	
+		<script src="js/echarts-all.js"></script>			
+	</body>
+
+</html>
